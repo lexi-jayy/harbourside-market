@@ -26,14 +26,14 @@ function harbour_custom_settings(){
 }
 
 function harbourside_sidebar_options(){
-
+    echo 'Customize your Sidebar Information';
 }
 function harbourside_sidebar_name(){
-    
+    echo '<input type="text" name="first-name" value="" placeholder="First Name"/>';
 }
 function harbourside_create_page(){
-    
+    require_once(get_template_directory() . '/inc/templates/harbourside-admin.php' );
 }
 function haurbourside_theme_settings_page(){
-    
+    echo '<h1>Panda Custom CSS Options </h1>';
 }
