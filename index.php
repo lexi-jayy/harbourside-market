@@ -1,7 +1,7 @@
 <?php get_header(); ?>
     
 <h1>This is from our index.php file</h1>
-
+<img src="<?php echo get_theme_mod('image_settings');?>" alt="">
 <?php if( have_posts() ): ?>
     <?php while( have_posts() ): the_post() ?>
         <div class="">
