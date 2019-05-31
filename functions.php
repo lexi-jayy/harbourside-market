@@ -32,9 +32,6 @@ require_once get_template_directory() . '/assets/class-wp-bootstrap-navwalker.ph
 //Add all of the defauly block styles needed for gutenbergs editor
 add_theme_support( 'wp-block-styles' );
 add_theme_support('post-thumbnails');
-
-
-
 // add_theme_support( 'custom-background');
 
 
