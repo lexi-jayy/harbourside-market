@@ -1,11 +1,8 @@
+
 <?php get_header(); ?>
-    
-<h1>This is from our index.php file</h1>
-<!-- <img src=" -->
-<?php 
-// echo get_theme_mod('image_settings');
-?>
-<!-- " alt=""> -->
+
+<h1>This is from page.php</h1>
+
 <?php if( have_posts() ): ?>
     <?php while( have_posts() ): the_post() ?>
         <div class="">
@@ -14,15 +11,9 @@
             <div class="content">
                 <?php the_content(); ?>
             </div>
-            <a class="btn btn-primary" href="<?php the_permalink(); ?>">View Post</a>
             <hr>
         </div>
     <?php endwhile; ?>
-<?php else: ?>
-    <p>There is no post</p>
 <?php endif; ?>
 
-
-
-    
 <?php get_footer(); ?>
