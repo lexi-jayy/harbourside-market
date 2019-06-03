@@ -12,6 +12,15 @@ function add_custom_files(){
 
     function add_admin_styles(){
         wp_enqueue_style('my_admin_styles', get_template_directory_uri() . '/assets/css/admin.css' , array(), '0.1');
+
+        $screen = get_current_screen();
+        if($screen->post_type === 'post' && ($screen->action === 'add' || $_GET['action'] === 'edit') ){
+            wp_enqueue_script('change_post_formats_script', get_template_directory_uri() . '/assets/js/change_post_formats.js', array('jquery'), '0.1', true);
+            $format = get_post_format($_GET['post']);
+            wp_localize_script('change_post_formats_script', 'formatObject', array(
+                'format' => $format
+            ));
+        }
     }
     add_action('admin_enqueue_scripts', 'add_admin_styles');
 
@@ -30,11 +39,13 @@ require_once get_template_directory() . '/assets/class-wp-bootstrap-navwalker.ph
 
 
 //Add all of the defauly block styles needed for gutenbergs editor
+//grouping all theme support so they stay together
 add_theme_support( 'wp-block-styles' );
 add_theme_support('post-thumbnails');
 add_theme_support( 'custom-background');
-
+add_theme_support( 'post-formats', array( 'image', 'video', 'audio' ) );
 
 
 
 require get_template_directory() . '/inc/customizer.php';
+require get_template_directory() . '/inc/custom_fields.php';
