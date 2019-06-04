@@ -16,3 +16,22 @@
 #headerNav ul li a{
     color: white;
 }
+
+
+.container {
+    background-color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+h2 {
+    text-align: center;
+}
+
+#posted {
+    text-align: center;
+}
+
+#postList {
+    padding-left: 170px;
+}

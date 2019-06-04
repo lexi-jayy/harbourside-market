@@ -32,7 +32,7 @@ function register_my_menu() {
 }
 add_action( 'init', 'register_my_menu' );
 
-
+add_post_type_support( 'page', 'excerpt' );
 
 // Register Custom Navigation Walker
 require_once get_template_directory() . '/assets/class-wp-bootstrap-navwalker.php';

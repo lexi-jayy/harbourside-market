@@ -1,7 +1,6 @@
 <?php get_header(); ?>
 
-    <h1>This is from single-post.php</h1>
-
+    <div id="container">
     <?php if( have_posts() ): ?>
         <?php while( have_posts() ): the_post() ?>
             <div class="row">
@@ -22,10 +21,9 @@
                 </div>
             </div>
             <?php
-                // get_template_part( 'content', get_post_format() );
-                // get_template_part('singlePosts/contentPost', get_post_format() );
             ?>
         <?php endwhile; ?>
     <?php endif; ?>
+    </div>
 
 <?php get_footer(); ?>
