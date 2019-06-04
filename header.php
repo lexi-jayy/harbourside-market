@@ -8,7 +8,7 @@
     <?php wp_head(); ?>
 </head>
 <body  <?php body_class();  ?>>
-<div class="container">
+<div class="container-fluid p-0">
     <nav class="navbar navbar-expand-md navbar-light bg-light" role="navigation">
             <!-- Brand and toggle get grouped for better mobile display -->
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-controls="bs-example-navbar-collapse-1" aria-expanded="false" aria-label="Toggle navigation">
@@ -28,3 +28,4 @@
                 ) );
                 ?>
             </nav>
+            <h1 id="logo"></h1>

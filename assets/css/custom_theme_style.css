@@ -18,10 +18,10 @@
 }
 
 
-.container {
+.row {
     background-color: white;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 20%;
+    /* padding-right: 20px; */
 }
 
 h2 {
@@ -35,3 +35,36 @@ h2 {
 #postList {
     padding-left: 170px;
 }
+
+#logo {
+    width: 375px;
+    height: 200px;
+    background-image: url(../../img/harbourside-logo.png);
+    margin-left: 40%;
+    background-repeat: no-repeat;
+}
+
+
+#footer {
+	background-color: #2B6F73;
+	height: 150px;
+	padding: 30px 30px 0 35px;
+}
+#contact { 
+	float: left; 
+	line-height: 1.25; 
+	margin-right: 20px; 
+	padding-left: 5px; 
+	width: 295px;
+}
+
+#copyright {
+	float: left;
+	width: 375px;
+}
+
+#positively-wellington {
+	float: right;
+}
+
+

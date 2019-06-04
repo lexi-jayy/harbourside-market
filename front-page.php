@@ -1,6 +1,5 @@
 <?php get_header(); ?>
 
-    <div id="container">
 <div class="row mb-5">
 <?php if( have_posts() ): ?>
     <div class="col <?php echo $contentorder; ?>">
@@ -11,7 +10,6 @@
         </div>
     </div>
     <?php endif; ?>
-    </div>
     </div>
 
 
