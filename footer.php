@@ -1,12 +1,4 @@
 
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
 <div id="footer">
 	<div id="contact">
 		<p><span class="small">For more information, contact:</span><br>
